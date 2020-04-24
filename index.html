@@ -11,20 +11,35 @@
             <h1>Interesting Boxes</h1>
 		</div>
 		<div class="row">
-			<p>Using Bootstrap, HTML, and CSS to show information in an interesting way</p>
+			<p>Using Bootstrap, HTML, and CSS to show information in an interesting way. Click the box to reveal a message!</p>
         </div>
         <div class="row"><h2>Icons created on Adobe Illustrator</h2></div>
 	    <div class="row">
-            <div class="infoBox">
+            <div class="infoBox" onclick="boxOne()">
                 <p>A Donut</p>
             </div>	
-            <div class="infoBox">
+            <div class="infoBox" onclick="boxTwo()">
                 <p>A Pencil and Ruler</p>
             </div>	
-            <div class="infoBox">
+            <div class="infoBox" onclick="boxThree()">
                 <p>A House</p>
             </div>	
-	    </div>
-	</div>
-
+        </div>
+        <div class="row">
+            <div class="col-sm-4" id="demo"></div>
+            <div class="col-sm-4" id="demoTwo"></div>
+            <div class="col-sm-4" id="demoThree"></div>
+        </div>
+    </div>
+    <script>
+        function boxOne() {
+            document.getElementById("demo").innerHTML ="A donut is a small fried treat of sweetened dough.";
+        }
+        function boxTwo() {
+            document.getElementById("demoTwo").innerHTML ="A pencil is a writing tool.";
+        }
+        function boxThree() {
+            document.getElementById("demoThree").innerHTML ="Home is where your heart is.";
+        }
+    </script>
 </body>
