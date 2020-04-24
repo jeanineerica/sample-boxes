@@ -1,2 +1,2 @@
 # sample-boxes
-Sample boxes using HTML and CSS
+Sample boxes with different background image and text with shadow using HTML and CSS and Bootstrap.
